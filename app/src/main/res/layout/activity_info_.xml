@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Ver_todos_Documentos.Info_Activity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_activity_info_textview"
+            android:id="@+id/card_tv_id_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id: "/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/estilo_activity_info_valor"
+            android:id="@+id/card_tv_id_valor_info"
+            android:text="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_activity_info_textview"
+            android:id="@+id/card_tv_nombre_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Trabajo: " />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/estilo_activity_info_valor"
+            android:id="@+id/card_tv_nombre_valor_info"
+            android:text="Tigo Becas USA"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_activity_info_textview"
+            android:id="@+id/card_fecha_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/estilo_activity_info_valor"
+            android:id="@+id/card_tv_fecha_valor_info"
+            android:text="2017/05/29"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_activity_info_textview"
+            android:id="@+id/card_ruta_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ruta de Archivos:" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp" />
+
+        <TextView
+            style="@style/estilo_activity_info_valor"
+            android:id="@+id/card_tv_ruta_valor_info"
+            android:text="F:/Tigo_15444.pdf"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_activity_info_textview"
+            android:id="@+id/card_tipo_trabajo_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Trabajo:"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/estilo_activity_info_valor"
+            android:id="@+id/card_tv_tipo_trabajo_valor_info"
+            android:text="Volante"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_activity_info_textview"
+            android:id="@+id/card_empresa_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empresa:" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/estilo_activity_info_valor"
+            android:id="@+id/card_tv_empresa_valor_info"
+            android:text="Tigo"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <Button
+        style="@style/estilo_boton"
+        android:id="@+id/bt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Asignar" />
+</LinearLayout>

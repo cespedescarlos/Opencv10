@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_descolor"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Tipo_Trabajo">
+
+    <TextView
+        android:id="@+id/tv_titulo_empresa_reg"
+        android:background="@color/negro"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/AzulClaro2"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Registrar Empresa"
+        />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        style="@style/estilo_p_empresa_tv1"
+        android:id="@+id/tv_nombre_empresa_reg"
+        android:text="Nombre:" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+
+    <AutoCompleteTextView
+        android:textSize="20sp"
+        android:textColor="@color/negro"
+        android:id="@+id/acv_nombre_empresa_reg_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Tigo" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_p_empresa_tv1"
+            android:id="@+id/tv_telefono_empresa_reg"
+            android:text="Telefono: "/>
+
+        <EditText
+            android:textSize="20sp"
+            android:textColor="@color/negro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/ed_telefono_empresa_reg_valor"
+            android:numeric="integer"
+            android:text="123456"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_p_empresa_tv1"
+            android:id="@+id/tv_nombre_contacto_empresa_reg"
+            android:text="Nombre Contacto: "/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp" />
+
+        <AutoCompleteTextView
+            android:textColor="@color/negro"
+            android:textSize="20sp"
+            android:id="@+id/acv_nombre_contacto_empresa_reg_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Tigo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_p_empresa_tv1"
+            android:id="@+id/tv_telefono_contacto_empresa_reg"
+            android:text="Telefono: "/>
+
+        <EditText
+            android:textSize="20sp"
+            android:textColor="@color/negro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/ed_telefono_contacto_empresa_reg_valor"
+            android:numeric="integer"
+            android:text="123456"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <Button
+        style="@style/estilo_boton"
+        android:id="@+id/bt_reg_empresa"
+        android:text="Registrar" />
+
+</LinearLayout>

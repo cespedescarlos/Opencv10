@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/usuario_reg_navi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Administrar Usuarios" />
+        <item
+            android:id="@+id/tipo_trabajo_reg_navi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Administrar Tipo de Trabajo" />
+        <item
+            android:id="@+id/empresa_reg_navi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Administrar Empresa" />
+        <item
+            android:id="@+id/roles_reg_navi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Administrar Roles" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ver_tipo_trab_todos_navi"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Ver Tipo de Trabajos" />
+
+        <item
+            android:id="@+id/ver_empresa_todos_navi"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Ver Empresas" />
+
+        <item
+            android:id="@+id/permiso_todos_navi"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Ver Permisos" />
+
+    </group>
+
+    <item
+        android:id="@+id/cerrar_sesion_navi"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Cerrar Sesion" />
+
+
+
+</menu>

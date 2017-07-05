@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="estilo_boton">
+
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/amarillo1</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="estilo_boton2">
+
+        <!-- boton seleccionar imagen-->
+
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/AzulClaro2</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:gravity">center</item>
+        <!--item name="android:layout_width">match_parent</item-->
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+</resources>

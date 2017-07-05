@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Ver_Documento"
+    android:orientation="vertical"
+    android:background="@drawable/logo_descolor"
+    android:gravity="center_horizontal">
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/tv_titulo_ver_doc"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/negro"
+        android:text="Propiedades del Documento"
+        android:textColor="@color/AzulClaro2"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/estilo_p_ver_doc_tv1"
+                android:text="Id:"
+                android:id="@+id/tv_ver_doc_id"/>
+
+            <EditText
+                style="@style/estilo_p_ver_doc_valor"
+                android:id="@+id/ed_ver_doc_id"
+                android:paddingRight="20dp"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="190dp"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/arteycolor"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/estilo_p_ver_doc_tv1"
+                android:text="Nombre:"
+                android:id="@+id/tv_ver_doc_nombre"/>
+
+            <EditText
+                style="@style/estilo_p_ver_doc_valor"
+                android:id="@+id/ed_ver_doc_nombre"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/estilo_p_ver_doc_tv1"
+                android:text="Fecha:"
+                android:id="@+id/tv_ver_doc_fecha"/>
+
+            <EditText
+                style="@style/estilo_p_ver_doc_valor"
+                android:id="@+id/ed_ver_doc_fecha"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/estilo_p_ver_doc_tv1"
+                    android:text="Cantidad:"
+                    android:id="@+id/tv_ver_doc_cantidad"/>
+
+                <EditText
+                    style="@style/estilo_p_ver_doc_valor"
+                    android:id="@+id/ed_ver_doc_cantidad" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="50dp"
+                android:layout_height="0dp" />
+
+            <CheckBox
+                android:id="@+id/ch_ver_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="20sp"
+                android:text="Placas" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:paddingLeft="2dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/azulOscuro"
+                    android:text="Cotizacion:"
+                    android:textSize="20sp"
+                    android:id="@+id/tv_ver_doc_cotizacion"
+                    android:paddingRight="5dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_ver_doc_cotizacion"
+                    android:numeric="decimal"
+                    android:hint="500.96"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/azulOscuro"
+                    android:textSize="20sp"
+                    android:text="Precio:"
+                    android:id="@+id/tv_ver_doc_precio"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_ver_doc_precio"
+                    android:numeric="decimal"
+                    android:hint="600.96"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+        <!--LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/estilo_p_ver_doc_tv1"
+                android:text="Cotizacion:"
+                android:id="@+id/tv_ver_doc_cotizacion"/>
+            <EditText
+                style="@style/estilo_p_ver_doc_valor"
+                android:id="@+id/ed_ver_doc_cotizacion"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="80dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/tv_ver_doc_precio"
+                style="@style/estilo_p_ver_doc_tv1"
+                android:paddingRight="10dp"
+                android:text="Precio:" />
+
+            <EditText
+                style="@style/estilo_p_ver_doc_valor"
+                android:id="@+id/ed_ver_doc_precio"/>
+
+        </LinearLayout-->
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/estilo_p_ver_doc_tv1"
+                android:text="Ruta Archivos de Diseño:"
+                android:id="@+id/tv_ver_doc_ruta"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/negro"
+                android:id="@+id/ed_ver_doc_ruta"/>
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <Button
+            style="@style/estilo_boton"
+            android:id="@+id/bt_ver_doc_aceptar"
+            android:text="Aceptar" />
+
+    </LinearLayout>
+
+</LinearLayout>

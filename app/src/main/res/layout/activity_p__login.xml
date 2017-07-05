@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_descolor"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Login">
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/ima_view_original"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logo_editado5"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignLeft="@+id/textView_result"
+        android:layout_alignStart="@+id/textView_result" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout style="@style/estilo_login_layout">
+        <LinearLayout style="@style/estilo_login_layout">
+
+            <TextView
+                style="@style/estilo_login_tv"
+                android:id="@+id/tv_correo_login"
+                android:text="Correo:" />
+
+            <EditText
+                style="@style/estilo_login_valor"
+                android:id="@+id/ed_correo_valor_login"
+                android:ems="10"
+                android:hint="juan@dominio.com"
+                android:inputType="textEmailAddress"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="153dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <LinearLayout style="@style/estilo_login_layout">
+
+            <TextView
+                style="@style/estilo_login_tv"
+                android:id="@+id/tv_contraseña_login"
+                android:text="Contraseña:"/>
+
+            <EditText
+                style="@style/estilo_login_valor"
+                android:id="@+id/ed_contraseña_valor_login"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="12345"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="289dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/bt_Ininicar_sesion"
+            style="@style/estilo_boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesion"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

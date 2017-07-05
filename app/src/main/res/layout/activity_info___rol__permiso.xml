@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logo_descolor"
+    android:padding="10dp"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Ver_Todos_Permisos_Rol.Info_Activity_Rol_Permiso">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/negro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/AzulClaro2"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:id="@+id/tv_titulo_rol_info_rol_permiso"
+            android:text="Rol Registrado"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_id_rol_info_rol_permisos"
+            style="@style/estilo_info_rol_permiso_textview"
+            android:text="Id:" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/tv_id_rol_info_rol_permiso_valor"
+            style="@style/estilo_info_rol_permiso_valor"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_info_rol_permiso_textview"
+            android:id="@+id/tv_nombre_rol_info_rol_permiso"
+            android:text="Nombre: "/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/estilo_info_rol_permiso_valor"
+            android:id="@+id/tv_nombre_rol_info_rol_permiso_valor"
+            android:text="s/n"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titulo_permiso_info_rol_permiso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/verdeconamarillo"
+            android:gravity="center_horizontal"
+            android:text="Permiso"
+            android:textColor="@color/AzulClaro2"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_info_rol_permiso_textview"
+            android:id="@+id/tv_id_permiso_info_rol_permisos"
+            android:text="Id:"
+            />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+        <TextView
+            style="@style/estilo_info_rol_permiso_valor"
+            android:id="@+id/tv_id_permiso_info_rol_permiso_valor"
+            android:text="0"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/estilo_info_rol_permiso_textview"
+            android:id="@+id/tv_nombre_permiso_info_rol_permiso"
+            android:text="Nombre: "/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            style="@style/estilo_info_rol_permiso_valor"
+            android:id="@+id/tv_nombre_permiso_info_rol_permiso_valor"
+            android:text="s/n"/>
+
+    </LinearLayout>
+
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <Button
+        style="@style/estilo_boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_asignar_info_rol_permiso"
+        android:text="ASIGNAR"/>
+</LinearLayout>

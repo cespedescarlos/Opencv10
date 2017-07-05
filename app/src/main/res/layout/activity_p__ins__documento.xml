@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/logo_descolor"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Ins_Documento"
+    android:paddingTop="10dp"
+    >
+
+    <TextView
+        android:background="@color/negro"
+        android:id="@+id/tv_ins_doc_titulo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar Documento"
+        android:textColor="@color/AzulClaro2"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        style="@style/estilo_p_ins_doc_layout"
+        android:paddingTop="10dp">
+
+        <TextView
+            style="@style/estilo_p_ins_doc_tv1"
+            android:text="Empresa:"
+            android:id="@+id/tv_ins_doc_empresa" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tigo"
+            android:textSize="15sp"
+            android:id="@+id/act_ins_doc_empresa_valor"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/bt_empresas_ins_doc"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:text="Seleccionar"
+            android:background="@color/AzulClaro1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/estilo_p_ins_doc_layout"
+        android:paddingTop="5dp">
+
+        <TextView
+            style="@style/estilo_p_ins_doc_tv1"
+            android:id="@+id/tv_ins_doc_tipo_trabajo"
+            android:paddingRight="10dp"
+            android:text="Tipo de Trabajo:" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volantes"
+            android:textSize="15sp"
+            android:id="@+id/act_ins_doc_tipo_trabajo_valor"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/bt_tipo_trabajo_ins_doc"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:text="Seleccionar"
+            android:background="@color/AzulClaro1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/estilo_p_ins_doc_layout"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_p_ins_doc_tv1"
+            android:id="@+id/tv_ins_doc_nombre"
+            android:text="Nombre del Trabajo"/>
+
+        <EditText
+            style="@style/estilo_p_ins_doc_valor"
+            android:id="@+id/ed_ins_doc_nombre"
+            android:hint="Nombre del Trabajo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/estilo_p_ins_doc_layout"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_weight="0.4">
+
+            <TextView
+                style="@style/estilo_p_ins_doc_tv1"
+                android:id="@+id/tv_ins_doc_cantidad"
+                android:text="Cantidad: "
+                android:paddingRight="10dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_ins_doc_cantidad"
+                android:numeric="integer"
+                android:hint="10000"
+                />
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:layout_weight="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch_ins_doc_placas"
+            android:text="Placas"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/azulOscuro"
+                android:text="Cotizacion:"
+                android:textSize="20sp"
+                android:id="@+id/tv_ins_doc_cotizacion"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_ins_doc_cotizacion"
+                android:numeric="decimal"
+                android:hint="500.96"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/azulOscuro"
+                android:textSize="20sp"
+                android:text="Precio:"
+                android:id="@+id/tv_ins_doc_precio"
+                android:paddingRight="5dp"
+                android:paddingLeft="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_ins_doc_precio"
+                android:numeric="decimal"
+                android:hint="600.96"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/estilo_p_ins_doc_layout"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            style="@style/estilo_p_ins_doc_tv1"
+            android:id="@+id/tv_ins_doc_ruta"
+            android:text="Ruta Archidos de Diseño:" />
+
+        <EditText
+            style="@style/estilo_p_ins_doc_valor"
+            android:id="@+id/ed_ins_doc_ruta"
+            android:hint="F:/Tigo_105151.pdf"
+            android:paddingTop="10dp"
+            android:text="F:/Tigo_105151.pdf" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="15dp" />
+
+    <Button
+        style="@style/estilo_boton"
+        android:id="@+id/bt_ins_doc_registrar"
+        android:text="Registrar" />
+
+</LinearLayout>

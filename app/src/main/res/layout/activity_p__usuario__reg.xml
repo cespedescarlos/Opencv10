@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_descolor"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Usuario_Reg">
+
+    <TextView
+        android:background="@color/negro"
+        android:textColor="@color/AzulClaro2"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:id="@+id/tv_titulo_rol_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Usuario"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_usuario_tv"
+            android:id="@+id/tv_correo_usuario_reg"
+            android:text="Correo:"/>
+        <AutoCompleteTextView
+            style="@style/estilo_usuario_valor"
+            android:id="@+id/act_correo_usuario_reg"
+            android:inputType="textEmailAddress"
+            android:hint="juan@dominio.com"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_usuario_tv"
+            android:id="@+id/tv_nombre_usuario_reg"
+            android:text="Nombre"/>
+        <AutoCompleteTextView
+            style="@style/estilo_usuario_valor"
+            android:id="@+id/act_nombre_usuario_reg"
+            android:hint="Carlos Cespedes"
+            android:inputType=""/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/estilo_usuario_tv"
+            android:id="@+id/tv_rol_usuario_reg"
+            android:text="Seleccione el Rol del Usuario:"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            style="@style/estilo_usuario_valor"
+            android:id="@+id/tv_rol_usuario_reg_valor"
+            android:text="Administrador"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/estilo_usuario_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_escoger_rol_usuario_reg"
+                android:text="Buscar"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/negro"
+                android:id="@+id/bt_buscar_rol_usuario_reg"
+                app:srcCompat="@android:drawable/ic_search_category_default" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <Button
+        style="@style/estilo_boton"
+        android:id="@+id/bt_registrar_usuario_reg"
+        android:text="Registrar"/>
+
+</LinearLayout>

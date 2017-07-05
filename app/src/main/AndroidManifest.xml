@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cespe.opencv10">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/fotoscan1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/fotoscan1"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Ins_Documento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Visualizar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Ver_Documento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Ver_todos_Documentos.Info_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Ver_todos_Documentos.P_Ver_Todos_Doc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".navi"
+            android:label="@string/title_activity_navi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Presentacion.P_Tipo_Trabajo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Empresa"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_ver_todos_empresas_ins_doc.P_Ver_todas_Empresas_Ins_doc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Ver_todos_tipo_trabajos.P_Ver_todos_tipo_trabajos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Rol"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Ver_todos_Permisos.P_Ver_todos_permisos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Presentacion.P_Ver_Todos_Permisos_Rol.P_Ver__Permisos_Rol"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Ver_Todos_Permisos_Rol.Info_Activity_Rol_Permiso"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Presentacion.P_Usuario_Reg"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Presentacion.P_Ver_Roles_Usuario_Reg.P_ver_roles_usuario_reg"></activity>
+    </application>
+
+</manifest>

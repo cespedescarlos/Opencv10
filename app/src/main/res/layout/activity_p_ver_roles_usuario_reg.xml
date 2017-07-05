@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Ver_Roles_Usuario_Reg.P_ver_roles_usuario_reg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_rol_usuario_reg"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</android.support.constraint.ConstraintLayout>

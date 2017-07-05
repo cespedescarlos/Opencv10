@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_descolor"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.cespe.opencv10.Presentacion.P_Rol">
+
+    <TextView
+        android:background="@color/negro"
+        android:textColor="@color/AzulClaro2"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:id="@+id/tv_titulo_rol_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Rol"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        style="@style/estilo_p_rol_tv1"
+        android:id="@+id/tv_nombre_rol_reg"
+        android:text="Nombre:"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/acv_rol_reg_valor"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Terminacion" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp" />
+
+    <Button
+        style="@style/estilo_boton"
+        android:id="@+id/bt_reg_rol"
+        android:text="Registrar"/>
+
+</LinearLayout>
